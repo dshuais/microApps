@@ -8,7 +8,8 @@ import './index.css'
 const initQiankun = () => {
   renderWithQiankun({
     mount(props: QiankunProps) {
-
+      console.log('micro reactApp mount:>> ', props);
+      
       render(props.container);
       
       props.onGlobalStateChange((res: unknown) => {
